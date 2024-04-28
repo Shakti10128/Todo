@@ -25,7 +25,7 @@ const Form = () => {
            await axios.post(`/api/Todo`,{
                 title,
                 description
-            }).then((data)=>{
+            }).then(()=>{
                 router.refresh();
             })
         } catch (error) {

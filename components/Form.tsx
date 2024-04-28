@@ -34,8 +34,8 @@ const Form = () => {
     }
 
   return (
-    <div className="flex flex-col gap-3 w-[800px]">
-        <input type="text" placeholder="Title" className="border border-black rounded-md p-2"
+    <div className="flex flex-col gap-3 w-[350px]  sm:w-[800px] mx-5">
+        <input type="text" placeholder="Title" className="w-full border border-black rounded-md p-2"
         value={title}
         onChange={(e)=> setTitle(e.target.value)}
         />

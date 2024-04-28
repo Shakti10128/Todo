@@ -32,7 +32,7 @@ const TodoLists:React.FC<TodoListsProps> = ({
     }
 
   return (
-    <div className="flex flex-col gap-3 w-[800px] max-h[800px] overflow-hidden">
+    <div className="flex flex-col gap-3 w-[350px] max-h[800px] sm:w-[800px] overflow-hidden">
         {
             todos.map((todo)=>{
                 return (

@@ -15,7 +15,7 @@ const TodoLists:React.FC<TodoListsProps> = ({
 
     const todoDeleteHandler = async(id:string)=>{
         try {
-            await axios.delete(`/api/Todo/${id}`).then(()=>{
+            await axios.delete(`${process.env.NEXT_PUBLIC_BASE_URL}/api/Todo/${id}`).then(()=>{
                 router.refresh();
             })
         } catch (error) {

@@ -22,7 +22,7 @@ const Form = () => {
             return;
         }
         try {
-           await axios.post('api/Todo',{
+           await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/Todo`,{
                 title,
                 description
             }).then((data)=>{
